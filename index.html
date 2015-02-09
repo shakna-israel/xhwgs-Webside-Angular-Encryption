@@ -1,0 +1,8 @@
+<script src="lib/angular.min.js"></script> <script 
+src="lib/tripledes.js"></script> <script 
+src="lib/encryptedlocalstorage.js"></script> <div ng-app="demo" 
+ng-controller="CryptController">
+  <input ng-keyup="encrypt($event)" placeholder="Text to encrypt..." 
+/>
+  <p>Encrypted text in localStorage: {{encryptedText}}</p>
+  <p>Decrypted text in localStorage {{decryptedText}}</p> </div>
